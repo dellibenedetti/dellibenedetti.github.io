@@ -16,11 +16,13 @@ body {
 .menu {
   display: flex;
   flex-direction: column; /* forza i link in colonna */
-  gap: 20px;             /* spazio tra le voci */
   margin-top: 20px;
+  gap: 10px; /* spazio tra le voci */
 }
 
+/* Forza ogni link a essere blocco */
 .menu a {
+  display: block; /* ESSENZIALE per andare a capo */
   color: #fff;
   text-decoration: none;
   font-style: normal; /* menu normale */
@@ -36,3 +38,11 @@ h1 {
   margin-bottom: 20px;
   font-weight: normal;
 }
+
+/* Progetti in corsivo */
+.project-list p {
+  font-style: italic;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
