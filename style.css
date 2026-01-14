@@ -1,3 +1,4 @@
+/* Reset generale */
 * {
   margin: 0;
   padding: 0;
@@ -8,40 +9,30 @@ body {
   background: #000;
   color: #fff;
   font-family: serif;
+  padding: 40px;
 }
 
-main {
-  padding: 60px;
-}
-
-h1 {
-  font-size: 32px;
-  font-weight: normal;
-  margin-bottom: 40px;
-}
-
-p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 30px;
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-a:hover {
-  opacity: 0.6;
+/* Menu verticale */
+.menu {
+  display: flex;
+  flex-direction: column; /* forza i link in colonna */
+  gap: 20px;             /* spazio tra le voci */
+  margin-top: 20px;
 }
 
 .menu a {
   color: #fff;
   text-decoration: none;
   font-style: normal; /* menu normale */
-  display: block;       /* forza ogni link a capo */
+  font-size: 1.1em;
 }
 
 .menu a:hover {
   opacity: 0.6;
+}
+
+/* Titolo principale */
+h1 {
+  margin-bottom: 20px;
+  font-weight: normal;
 }
