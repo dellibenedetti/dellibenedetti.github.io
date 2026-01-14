@@ -34,3 +34,14 @@ a {
 a:hover {
   opacity: 0.6;
 }
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-style: normal; /* menu normale */
+  display: block;       /* forza ogni link a capo */
+}
+
+.menu a:hover {
+  opacity: 0.6;
+}
