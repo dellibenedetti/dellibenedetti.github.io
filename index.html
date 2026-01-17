@@ -1,155 +1,157 @@
-<!-- STRUTTURA CONSIGLIATA
-/
-|– index.html
-|– comics.html
-|– design.html
-|– photography.html
-|– biography.html
-|– contact.html
-|– css/style.css
-|– img/
-|   |– comics/
-|   |– photography/
--->
-
-<!-- ================= index.html ================= -->
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Francesco Delli Benedetti</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>francesco delli benedetti</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main class="home">
+
+<main>
   <h1>francesco delli benedetti</h1>
-  <nav>
-    <a href="comics.html">comics</a>
-    <a href="design.html">design & illustrations</a>
-    <a href="photography.html">photography</a>
-    <a href="biography.html">biography</a>
+
+  <p>
+    <a href="comics.html">comics</a><br>
+    <a href="design.html">design &amp; illustrations</a><br>
+    <a href="photography.html">photography</a><br>
+    <a href="other.html">other</a><br>
+    <a href="biography.html">biography</a><br>
     <a href="contact.html">contact</a>
-  </nav>
+  </p>
 </main>
+
 </body>
 </html>
-
-<!-- ================= comics.html (pagina progetto con griglia) ================= -->
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Comics – Francesco Delli Benedetti</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>comics</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <a href="index.html" class="back">← home</a>
+
+<main>
+  <p><a href="index.html">← back</a></p>
+
   <h1>comics</h1>
-</header>
 
-<section class="gallery">
-  <!-- PROGETTO 1 -->
-  <article class="project">
-    <img src="img/comics/progetto1_01.jpg" alt="Titolo progetto 1">
-    <h2>Titolo progetto</h2>
-    <p>Breve descrizione del progetto, anno, tecnica, contesto.</p>
-  </article>
+  <section class="gallery">
 
-  <!-- PROGETTO 2 -->
-  <article class="project">
-    <img src="img/comics/progetto2_01.jpg" alt="Titolo progetto 2">
-    <h2>Altro progetto</h2>
-    <p>Descrizione sintetica.</p>
-  </article>
-</section>
+    <article class="project">
+      <img src="img/comics/progetto1_01.jpg" alt="">
+      <img src="img/comics/progetto1_02.jpg" alt="">
+      <h2>Titolo progetto</h2>
+      <p>Graphic novel, 2024</p>
+    </article>
+
+    <article class="project">
+      <img src="img/comics/progetto2_01.jpg" alt="">
+      <h2>Altro progetto</h2>
+      <p>Illustrazione, 2023</p>
+    </article>
+
+  </section>
+</main>
+
 </body>
 </html>
-
-<!-- ================= photography.html ================= -->
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Photography – Francesco Delli Benedetti</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>design & illustrations</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <a href="index.html" class="back">← home</a>
-  <h1>photography</h1>
-</header>
 
-<section class="gallery">
-  <article class="project">
-    <img src="img/photography/serie1_01.jpg" alt="Serie fotografica 1">
-    <h2>Serie fotografica</h2>
-    <p>Luogo, anno, concept.</p>
-  </article>
-</section>
+<main>
+  <p><a href="index.html">← back</a></p>
+
+  <h1>design & illustrations</h1>
+
+  <section class="gallery">
+
+    <article class="project">
+      <img src="img/design/progetto1_01.jpg" alt="">
+      <h2>Titolo progetto</h2>
+      <p>Poster / editorial, 2022</p>
+    </article>
+
+  </section>
+</main>
+
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>photography</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<!-- ================= css/style.css ================= -->
-body {
-  margin: 0;
-  font-family: Helvetica, Arial, sans-serif;
-  background: #fff;
-  color: #111;
-}
+<main>
+  <p><a href="index.html">← back</a></p>
 
-.home {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  <h1>photography</h1>
 
-h1 {
-  font-weight: normal;
-  letter-spacing: 0.05em;
-}
+  <section class="gallery">
 
-nav a {
-  display: block;
-  text-align: center;
-  margin: 0.3rem 0;
-  text-decoration: none;
-  color: #111;
-}
+    <article class="project">
+      <img src="img/photography/serie1_01.jpg" alt="">
+      <img src="img/photography/serie1_02.jpg" alt="">
+      <h2>Serie fotografica</h2>
+      <p>Luogo, anno</p>
+    </article>
 
-nav a:hover {
-  opacity: 0.5;
-}
+  </section>
+</main>
 
-header {
-  padding: 2rem;
-}
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>biography</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-.back {
-  text-decoration: none;
-  font-size: 0.9rem;
-}
+<main>
+  <p><a href="index.html">← back</a></p>
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
-}
+  <h1>biography</h1>
 
-.project img {
-  width: 100%;
-  display: block;
-}
+  <p>
+    Francesco Delli Benedetti è un fumettista e artista visivo.
+    Vive e lavora in Italia. Il suo lavoro si concentra su…
+  </p>
+</main>
 
-.project h2 {
-  font-size: 1rem;
-  margin: 0.5rem 0 0.2rem;
-}
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-.project p {
-  font-size: 0.85rem;
-  opacity: 0.7;
-}
+<main>
+  <p><a href="index.html">← back</a></p>
+
+  <h1>contact</h1>
+
+  <p>
+    email@email.com<br>
+    instagram: <a href="#">@nome</a>
+  </p>
+</main>
+
+</body>
+</html>
