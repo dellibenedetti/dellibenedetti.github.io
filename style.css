@@ -1,4 +1,4 @@
-* {
+* { 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -34,8 +34,29 @@ a {
 a:hover {
   opacity: 0.6;
 }
-  margin-bottom: 10px;
-  line-height: 1.6;
+/* ===== GALLERY ===== */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
 }
 
+/* ===== PROGETTO ===== */
 
+.project img {
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.project h2 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 16px;
+  opacity: 0.7;
+}
