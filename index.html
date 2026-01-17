@@ -1,32 +1,155 @@
+<!-- STRUTTURA CONSIGLIATA
+/
+|– index.html
+|– comics.html
+|– design.html
+|– photography.html
+|– biography.html
+|– contact.html
+|– css/style.css
+|– img/
+|   |– comics/
+|   |– photography/
+-->
+
+<!-- ================= index.html ================= -->
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Comics</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Francesco Delli Benedetti</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<main>
-  <h1>comics</h1>
-
-  <section class="gallery">
-
-    <article class="project">
-      <img src="img/comics/progetto1_01.jpg" alt="">
-      <img src="img/comics/progetto1_02.jpg" alt="">
-      <h2>Titolo progetto</h2>
-      <p>Graphic novel, 2024</p>
-    </article>
-
-    <article class="project">
-      <img src="img/comics/progetto2_01.jpg" alt="">
-      <h2>Altro progetto</h2>
-      <p>Illustrazione, 2023</p>
-    </article>
-
-  </section>
+<main class="home">
+  <h1>francesco delli benedetti</h1>
+  <nav>
+    <a href="comics.html">comics</a>
+    <a href="design.html">design & illustrations</a>
+    <a href="photography.html">photography</a>
+    <a href="biography.html">biography</a>
+    <a href="contact.html">contact</a>
+  </nav>
 </main>
-
 </body>
 </html>
+
+<!-- ================= comics.html (pagina progetto con griglia) ================= -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Comics – Francesco Delli Benedetti</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <a href="index.html" class="back">← home</a>
+  <h1>comics</h1>
+</header>
+
+<section class="gallery">
+  <!-- PROGETTO 1 -->
+  <article class="project">
+    <img src="img/comics/progetto1_01.jpg" alt="Titolo progetto 1">
+    <h2>Titolo progetto</h2>
+    <p>Breve descrizione del progetto, anno, tecnica, contesto.</p>
+  </article>
+
+  <!-- PROGETTO 2 -->
+  <article class="project">
+    <img src="img/comics/progetto2_01.jpg" alt="Titolo progetto 2">
+    <h2>Altro progetto</h2>
+    <p>Descrizione sintetica.</p>
+  </article>
+</section>
+</body>
+</html>
+
+<!-- ================= photography.html ================= -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Photography – Francesco Delli Benedetti</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <a href="index.html" class="back">← home</a>
+  <h1>photography</h1>
+</header>
+
+<section class="gallery">
+  <article class="project">
+    <img src="img/photography/serie1_01.jpg" alt="Serie fotografica 1">
+    <h2>Serie fotografica</h2>
+    <p>Luogo, anno, concept.</p>
+  </article>
+</section>
+</body>
+</html>
+
+<!-- ================= css/style.css ================= -->
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: 0.05em;
+}
+
+nav a {
+  display: block;
+  text-align: center;
+  margin: 0.3rem 0;
+  text-decoration: none;
+  color: #111;
+}
+
+nav a:hover {
+  opacity: 0.5;
+}
+
+header {
+  padding: 2rem;
+}
+
+.back {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.project img {
+  width: 100%;
+  display: block;
+}
+
+.project h2 {
+  font-size: 1rem;
+  margin: 0.5rem 0 0.2rem;
+}
+
+.project p {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
